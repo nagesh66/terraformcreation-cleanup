@@ -3,4 +3,4 @@ steps:
     args: ['hi']
 
 options:
-  logsBucket: 'gs://logbucket01' 
+  logging: CLOUD_LOGGING_ONLY
