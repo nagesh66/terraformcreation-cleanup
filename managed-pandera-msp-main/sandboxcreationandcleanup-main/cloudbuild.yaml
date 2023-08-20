@@ -1,8 +1,7 @@
-
 steps:
-- id: 'branch name'
+- id: 'pipeline stage 1'
   name: 'alpine'
-  entrypoint: 'sh'  
+  entrypoint: 'sh'
   args: 
   - '-c'
   - | 
@@ -10,6 +9,16 @@ steps:
       echo "$BRANCH_NAME"
       echo "hello testing"
       echo "***********************"
-      echo "hi testing this"
+
+- id: 'simple-stage 2'
+  name: 'alpine'
+  entrypoint: 'sh'
+  args: 
+  - '-c'
+  - | 
+      echo "This is a simple stage."
+      echo "You can add more commands here."
+      echo "***********************"
+
 options:
   logging: CLOUD_LOGGING_ONLY
