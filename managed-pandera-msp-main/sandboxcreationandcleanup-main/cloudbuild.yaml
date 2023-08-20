@@ -1,3 +1,4 @@
+
 steps:
 - id: 'branch name'
   name: 'alpine'
@@ -9,5 +10,6 @@ steps:
       echo "$BRANCH_NAME"
       echo "hello testing"
       echo "***********************"
+      echo "hi testing this"
 options:
   logging: CLOUD_LOGGING_ONLY
